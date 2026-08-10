@@ -20,9 +20,17 @@ All content is derived from the provided document.
 
 ## 📁 Repository Navigation
 
-### 1. [Introduction](01_Introduction/introduction.md)
+![Rack Diagram](https://raw.githubusercontent.com/gitjackirvin/llm-system-design/11_Diagrams/Physical Diagram.drawio.png)
 
+### 1. Introduction
+
+Brief introduction to my project and why I designed it.
+
+* [Introduction](01_Introduction/introduction.md)
+  
 ### 2. Design Requirements
+
+Includes secure infrastructure, low latency, high availability, subnetting isolation, and backup availability as goals.
 
 * [Capabilities](02_Design_Requirements/Capabilities/capabilities.md)
 * [Goals](02_Design_Requirements/Goals/goals.md)

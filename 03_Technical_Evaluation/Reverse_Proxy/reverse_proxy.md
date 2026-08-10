@@ -1,0 +1,2 @@
+3.4.a) Reverse Proxy: Nginx (Open Source) (Free)
+Explanation: Nginx is a high-performance open-source web server and reverse proxy designed to efficiently handle large numbers of concurrent connections. In this system, it supports features such as managing HTTPS termination, routing requests to backend services, and distributing load across API gateway instances if needed.  It also supports features like load balancing, request buffering, rate limiting, and connection management, which help protect backend services from traffic spikes and overload.

@@ -9,7 +9,7 @@ This system supports **LLM inference, model training, APIs, databases, resource 
 
 The design also considers the physical requirements of operating the system, including rack space, switching, cabling, power consumption, UPS protection, hardware requirements, and future expansion. Backup and recovery planning is included to maintain high-availability and protect important system data.
 
-The result is an infrastructure architecture designed to provide an internal AI platform that can support a variety of workloads while remaining secure, observable, maintainable, and scalable. Below is a sample of what the physical rack architecture would look like.
+Below is what the physical rack architecture will look like:
 
 ![LLM System Network Design](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
 

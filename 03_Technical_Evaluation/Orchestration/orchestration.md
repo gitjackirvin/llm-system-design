@@ -1,0 +1,2 @@
+3.6.) Orchestration System: Kubernetes (Open Source) (Free)
+Explanation: Kubernetes is an open-source container orchestration platform. It works as a load balancer and can distribute workloads across multiple GPU nodes, scale services up during high-demand periods such as CTF competitions, and scale them down during low usage to optimize resource efficiency. Kubernetes also provides fault tolerance by automatically restarting failed containers and rerouting traffic if a node goes offline.

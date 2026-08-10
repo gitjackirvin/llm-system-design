@@ -1,0 +1,2 @@
+3.11.) Log Tracking: Loki (Open Source) (Free)
+Explanation: Loki is a log aggregation system designed for storing and querying logs. It only stores the metadata from logs, like what service it was from, what it happened, what level of severity it is, and what instance it is from. It offers a centralized place to store all of the logs generated and gives you the ability to track them across your entire system. When integrated with Grafana you can display all of the logs that Loki tracks.

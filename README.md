@@ -1,36 +1,92 @@
 # Large Language Model System Network Design
 
-This repository contains a complete, structured, and GitHub-optimized version of the **LLM System Network Design Report** authored by **Jack Irvin**.
-The original document has been reorganized into modular Markdown files for readability, maintainability, and version control. Below is an image of the design for explanation.
+> **A complete network, infrastructure, security, and deployment design for an internal Large Language Model (LLM) system.**
 
-[![Rack Diagram](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
+This repository contains a complete, structured, and GitHub-optimized version of the **LLM System Network Design Report** authored by **Jack Irvin**.
+
+The original document has been reorganized into modular Markdown files covering system requirements, technical evaluation, hardware, physical infrastructure, networking, security, scalability, backups, diagrams, cost analysis, and use cases.
+
+---
+
+## 👤 About Me
+
+**Jack Irvin**
+
+I am a **[your role/title]** with an interest in **[your areas of interest]**.
+
+I designed this project to explore the process of planning and building a complete internal LLM infrastructure environment, with an emphasis on **networking, security, infrastructure, scalability, performance, and reliability**.
+
+### What I Do
+
+* **Role:** [Your role]
+* **Interests:** [Networking / Cybersecurity / AI / Infrastructure / Systems Administration / etc.]
+* **Education:** [Your school, program, certifications, or education]
+* **Location:** [Optional]
+* **GitHub:** [Add your GitHub profile]
+* **LinkedIn:** [Add your LinkedIn profile]
+
+### About This Project
+
+This project demonstrates my ability to take a complex technical requirement and break it down into a complete infrastructure design.
+
+The project covers everything from **hardware selection and rack design to network segmentation, security controls, LLM deployment, monitoring, backups, scalability, and cost analysis**.
+
+---
+
+## 🖥️ System Design
+
+Below is the overall design of the LLM infrastructure.
+
+<!-- Replace the path below with the location of your main overview image -->
+
+![LLM System Network Design](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)
+
+---
 
 ## 📘 Purpose
 
-This repository provides a full technical breakdown of designing, deploying, and maintaining an internal Large Language Model (LLM) system, including:
+This repository provides a full technical breakdown of designing, deploying, and maintaining an internal Large Language Model (LLM) system.
+
+The project covers:
 
 * System capabilities
 * Security and infrastructure goals
 * Technical stack evaluation
 * Hardware architecture
 * Physical infrastructure planning
-* Backup and scalability strategies
+* Network segmentation
+* Backup and recovery strategies
+* Scalability planning
+* Monitoring and observability
 * Cost analysis
-* Diagrams and usage scenarios
+* Diagrams and architecture
+* Real-world usage scenarios
 
-All content is derived from the provided document.
+All content is derived from the original LLM System Network Design Report.
 
-## 📁 Repository Navigation
+---
 
-### 1. Introduction
+# 📁 Repository Navigation
 
-Brief introduction to my project and why I designed it.
+The repository is organized into sections. **Click any section below to expand it.**
+
+<details>
+<summary><strong>1. Introduction</strong></summary>
+
+### Introduction
+
+A brief introduction to the project and the reasoning behind the system design.
 
 * [Introduction](01_Introduction/introduction.md)
-  
-### 2. Design Requirements
 
-Includes secure infrastructure, low latency, high availability, subnetting isolation, and backup availability as goals.
+</details>
+
+<details>
+<summary><strong>2. Design Requirements</strong></summary>
+
+### Design Requirements
+
+This section establishes the requirements and design goals for the LLM infrastructure, including security, latency, availability, scalability, backups, and network isolation.
 
 * [Capabilities](02_Design_Requirements/Capabilities/capabilities.md)
 * [Goals](02_Design_Requirements/Goals/goals.md)
@@ -41,9 +97,16 @@ Includes secure infrastructure, low latency, high availability, subnetting isola
 * [Backup Goals](02_Design_Requirements/Backup_Goals/backup_goals.md)
 * [Subnetting Goals](02_Design_Requirements/Subnetting_Goals/subnetting_goals.md)
 
-### 3. Technical Evaluation
+</details>
 
-Includes LLM model selection, training, API frameworks, orchestration, database, caching, metrics, logging, alerting, and credential security.
+<details>
+<summary><strong>3. Technical Evaluation</strong></summary>
+
+### Technical Evaluation
+
+Evaluation of the software and technologies required to operate the LLM system.
+
+Topics include LLM model selection, training, APIs, orchestration, databases, caching, metrics, logging, alerting, and credential security.
 
 * [Alerting](03_Technical_Evaluation/Alerting/alerting.md)
 * [Backend API](03_Technical_Evaluation/Backend_API/backend_api.md)
@@ -60,12 +123,18 @@ Includes LLM model selection, training, API frameworks, orchestration, database,
 * [Orchestration](03_Technical_Evaluation/Orchestration/orchestration.md)
 * [Reverse Proxy](03_Technical_Evaluation/Reverse_Proxy/reverse_proxy.md)
 
-### 4. Hardware Evaluation
+</details>
 
-Full hardware specifications, GPU compute nodes, database nodes, observability nodes, gateway nodes, UPS selection, and cost tables.
+<details>
+<summary><strong>4. Hardware Evaluation</strong></summary>
+
+### Hardware Evaluation
+
+Evaluation and selection of the physical hardware required to operate the system.
+
+This includes GPU compute nodes, database servers, observability servers, gateway servers, power requirements, UPS systems, hardware costs, and software-to-hardware mapping.
 
 * [Gateway Servers](04_Hardware_Evaluation/Gateway_Servers/gateway_servers.md)
-* [UPS Selection](04_Hardware_Evaluation/ups_selection.md)
 * [Hardware Costs](04_Hardware_Evaluation/hardware_costs.md)
 * [Hardware Specs](04_Hardware_Evaluation/Hardware_Specs/Hardware%20Specs.md)
 * [Latency SLO](04_Hardware_Evaluation/latency_slo.md)
@@ -73,13 +142,20 @@ Full hardware specifications, GPU compute nodes, database nodes, observability n
 * [Observability Servers](04_Hardware_Evaluation/Observability_Servers/observability_servers.md)
 * [Power Usage](04_Hardware_Evaluation/Power_Usage/power_usage.md)
 * [Software to Hardware Mapping](04_Hardware_Evaluation/Software_to_Hardware_Mapping/Software%20to%20Hardware%20Mapping.md)
-* [Token Estimation / Hardware Token Estimation](04_Hardware_Evaluation/Token_Estimation/Hardware%20Token%20Estimation.md)
+* [Hardware Token Estimation](04_Hardware_Evaluation/Token_Estimation/Hardware%20Token%20Estimation.md)
 * [UPS Selection](04_Hardware_Evaluation/UPS_Selection/ups_selection.md)
 * [vLLM / Axolotl Server](04_Hardware_Evaluation/vLLM_Axolotl_Server/Vllm_axolotl_server.md)
 
-### 5. Physical Infrastructure
+</details>
 
-Rack design, switching, cabling, and total physical cost.
+<details>
+<summary><strong>5. Physical Infrastructure</strong></summary>
+
+### Physical Infrastructure
+
+Planning for the physical environment in which the LLM system will operate.
+
+This section covers rack requirements, switching, cabling, subnetting requirements, and overall physical infrastructure costs.
 
 * [Cabling Requirements](05_Physical_Infrastructure/Cabling_Requirements/cabling_requirements.md)
 * [Rack Requirements](05_Physical_Infrastructure/Rack_Requirements/rack_requirements.md)
@@ -87,40 +163,67 @@ Rack design, switching, cabling, and total physical cost.
 * [Switching Requirements](05_Physical_Infrastructure/Switching_Requirements/switching_requirements.md)
 * [Total Physical Cost](05_Physical_Infrastructure/Total_Physical_Cost/total_physical_cost.md)
 
-### 6. Data Access
+</details>
 
-Proxmox access, metrics access, and security considerations.
+<details>
+<summary><strong>6. Data Access</strong></summary>
+
+### Data Access
+
+Documentation covering system access, Proxmox access, software access, metrics access, and security considerations.
 
 * [Proxmox Access](06_Data_Access/Proxmox_Access/proxmox_access.md)
 * [Security Considerations](06_Data_Access/Security_Considerations/security_considerations.md)
 * [Software Access](06_Data_Access/Software_Access/software_access.md)
 
-### 7. Subnetting
+</details>
 
-Data segmentation and VLAN design.
+<details>
+<summary><strong>7. Subnetting</strong></summary>
+
+### Subnetting
+
+Network segmentation and VLAN architecture used to isolate different components of the infrastructure.
 
 * [Data Segmentation](07_Subnetting/Data_Segmentation/data_segmentation.md)
 * [VLANs](07_Subnetting/VLANs/vlans.md)
 
-### 8. Scalability
+</details>
 
-Physical, server, and database scalability planning.
+<details>
+<summary><strong>8. Scalability</strong></summary>
+
+### Scalability
+
+Planning for future growth of the physical infrastructure, servers, compute resources, and database systems.
 
 * [Database Scalability](08_Scalability/Database_Scalability/database_scalability.md)
 * [Physical Scalability](08_Scalability/Physical_Scalability/physical_scalability.md)
 * [Server Scalability](08_Scalability/Server_Scalability/server_scalability.md)
 
-### 9. Backups
+</details>
 
-Backup locations, schedules, and retention policies.
+<details>
+<summary><strong>9. Backups</strong></summary>
+
+### Backups
+
+Backup architecture covering backup locations, scheduling, and retention policies.
 
 * [Backup Locations](09_Backups/Backup_Locations/backup_locations.md)
 * [Backup Retention](09_Backups/Backup_Retention/backup_retention.md)
 * [Backup Schedule](09_Backups/Backup_Schedule/backup_schedule.md)
 
-### 10. Security
+</details>
 
-Logging, filtering, rate limiting, validation, subnetting, patching, and encryption.
+<details>
+<summary><strong>10. Security</strong></summary>
+
+### Security
+
+Security controls designed to protect the LLM infrastructure and its users.
+
+Topics include logging, filtering, rate limiting, input validation, network segmentation, patching, and encryption.
 
 * [Continuous Patching](10_Security/Continuous_Patching/continuous_patching.md)
 * [Encryption in Transit](10_Security/Encryption_in_Transit/encryption_in_transit.md)
@@ -130,28 +233,54 @@ Logging, filtering, rate limiting, validation, subnetting, patching, and encrypt
 * [Separate Subnetting](10_Security/Separate_Subnetting/separate_subnetting.md)
 * [Validation & Sanitizing](10_Security/Validation_Sanitizing/validation_sanitizing.md)
 
-### 11. Diagrams
+</details>
 
-Logical, hardware, and conceptual diagrams.
+<details>
+<summary><strong>11. Diagrams</strong></summary>
 
-* [Hardware Diagram Explained](11_Diagrams/Hardware_Diagram/hardware_diagram.md)
-* [Hardware Diagram](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)
-* [Logical Diagram Explained](11_Diagrams/Logical_Diagram/logical_diagram.md)
-* [Logical Diagram](11_Diagrams/Logical_Diagram/Rack%20Diagram-Page-3.drawio.png)
-* [Rack Diagram Explained](11_Diagrams/Rack_Diagram/rack_diagram.md)
-* [Rack Diagram](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
+### Diagrams
 
-### 12. Cost Analysis
+Architecture diagrams documenting the logical, physical, hardware, and rack designs.
 
-Hardware, physical infrastructure, and total cost.
+#### Hardware Diagram
+
+* [Hardware Diagram Explanation](11_Diagrams/Hardware_Diagram/hardware_diagram.md)
+
+[![Hardware Diagram](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)
+
+#### Logical Diagram
+
+* [Logical Diagram Explanation](11_Diagrams/Logical_Diagram/logical_diagram.md)
+
+[![Logical Diagram](11_Diagrams/Logical_Diagram/Rack%20Diagram-Page-3.drawio.png)](11_Diagrams/Logical_Diagram/Rack%20Diagram-Page-3.drawio.png)
+
+#### Rack Diagram
+
+* [Rack Diagram Explanation](11_Diagrams/Rack_Diagram/rack_diagram.md)
+
+[![Rack Diagram](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
+
+</details>
+
+<details>
+<summary><strong>12. Cost Analysis</strong></summary>
+
+### Cost Analysis
+
+Analysis of the estimated costs associated with the hardware, physical infrastructure, and complete system.
 
 * [Hardware Cost](12_Cost_Analysis/Hardware_Cost/hardware_cost.md)
 * [Physical Cost](12_Cost_Analysis/Physical_Cost/physical_cost.md)
 * [Total Cost](12_Cost_Analysis/Total_Cost/total_cost.md)
 
-### 13. Uses
+</details>
 
-Use-case table for the LLM system.
+<details>
+<summary><strong>13. Uses</strong></summary>
+
+### Uses
+
+Potential applications and use cases for the internal LLM system.
 
 * [Academic & Research](13_Uses/Academic%20%26%20Research.md)
 * [Accessibility](13_Uses/Accessibility.md)
@@ -163,19 +292,19 @@ Use-case table for the LLM system.
 * [Networking & Infrastructure](13_Uses/Networking%20%26%20Infrastructure.md)
 * [Security & Compliance](13_Uses/Security%20%26%20Compliance.md)
 
-### 14. Scripts
+</details>
+
+<details>
+<summary><strong>14. Scripts</strong></summary>
+
+### Scripts
+
+Configuration files, network automation, access-control rules, and supporting project documentation.
 
 * [Access Switch Config](14_Scripts/access_switch_config)
 * [ACL Rules](14_Scripts/acl_rules)
 * [Core Switch Config](14_Scripts/core_switch_config)
 * [LLM Network Design Report](14_Scripts/LLM%20Network%20Design%20Report.md)
 
----
+</details>
 
-## 📜 License
-
-This repository contains content provided by the author and is intended for internal or educational use.
-
-## 📬 Contact
-
-For questions or improvements, reach out to the repository maintainer.

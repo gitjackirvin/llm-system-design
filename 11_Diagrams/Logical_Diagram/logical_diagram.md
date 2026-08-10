@@ -1,0 +1,1 @@
+Explanation: This diagram is an example flow demonstrating how a request to the LLM system is handled. It demonstrates a request from a local user, that travels into a server room, then is routed through a wall port to the server rack and then the request processing steps before a response is generated and returned.

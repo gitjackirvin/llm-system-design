@@ -20,7 +20,7 @@ All content is derived from the provided document.
 
 ## 📁 Repository Navigation
 
-![Rack Diagram](https://raw.githubusercontent.com/gitjackirvin/llm-system-design/11_Diagrams/Physical Diagram.drawio.png)
+[![Physical Diagram](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)
 
 ### 1. Introduction
 

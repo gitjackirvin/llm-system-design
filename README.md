@@ -63,7 +63,7 @@ Full hardware specifications, GPU compute nodes, database nodes, observability n
 * [Latency SLO](04_Hardware_Evaluation/latency_slo.md)
 * [MariaDB](04_Hardware_Evaluation/Maria_DB/mariadb_.md)
 * [Observability Servers](04_Hardware_Evaluation/Observability_Servers/observability_servers.md)
-* [Power Usage](04_Hardware_Evaluation/power_usage.md)
+* [Power Usage](04_Hardware_Evaluation/Power_Usage/power_usage.md)
 * [Software to Hardware Mapping](04_Hardware_Evaluation/Software_to_Hardware_Mapping/Software%20to%20Hardware%20Mapping.md)
 * [Token Estimation / Hardware Token Estimation](04_Hardware_Evaluation/Token_Estimation/Hardware%20Token%20Estimation.md)
 * [UPS Selection](04_Hardware_Evaluation/UPS_Selection/ups_selection.md)

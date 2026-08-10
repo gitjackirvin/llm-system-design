@@ -1,16 +1,15 @@
 # Large Language Model System Network Design
 
-🖥️ Project Overview
+Project Overview
 
 The Large Language Model System Network Design is a complete infrastructure design for deploying and operating an internal Large Language Model environment. The system is designed around security, performance, reliability, scalability, and controlled access, allowing an organization to run AI workloads while maintaining control over its data and infrastructure.
+This project was designed to enable organizations to run AI workloads while maintaining control over their data and infrastructure. It was designed with security, performance, scalability, high-availability, and controlled access in mind.
 
-The system is capable of supporting LLM inference, model training, API services, databases, caching, monitoring, logging, authentication, network segmentation, automated workflows, and backup operations. These services are separated across dedicated infrastructure and network segments to reduce unnecessary exposure and provide greater control over how systems communicate with one another.
+This system supports **LLM inference, model training, APIs, databases, resource monitoring, and automated workflows**. GPU compute, dedicated service servers, and gateway systems are isolated using **VLANs and network segmentation**, while **filtering, rate limiting, encryption, validation, logging, authentication, and continuous patching** protect the environment and control communication between systems.
 
-The architecture incorporates GPU compute resources for running and training models, dedicated servers for supporting services such as databases and observability, and gateway infrastructure for controlling access to the LLM services. Network segmentation and VLANs are used to isolate critical systems, while security controls such as filtering, rate limiting, encryption, validation, logging, and continuous patching help protect the environment.
+The design also considers the physical requirements of operating the system, including rack space, switching, cabling, power consumption, UPS protection, hardware requirements, and future expansion. Backup and recovery planning is included to maintain high-availability and protect important system data.
 
-The design also considers the physical requirements of operating the system, including rack space, switching, cabling, power consumption, UPS protection, hardware requirements, and future expansion. Backup and recovery planning is included to maintain availability and protect important system data.
-
-The result is an infrastructure architecture designed to provide an internal AI platform that can support a variety of workloads while remaining secure, observable, maintainable, and scalable.
+The result is an infrastructure architecture designed to provide an internal AI platform that can support a variety of workloads while remaining secure, observable, maintainable, and scalable. Below is a sample of what the physical rack architecture would look like.
 
 ![LLM System Network Design](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
 

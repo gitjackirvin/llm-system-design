@@ -1,0 +1,2 @@
+3.4.) Gateway API Framework: FastAPI (Open Source) (Free)
+Explanation: FastAPI is a Python-based API that offers very high speed and concurrency. It is good for something like a chatbot, which has many different people sending messages at once, because it supports asynchronous programming, which lets it process different requests at the same time, improving load. It serves as the main gateway between users and the LLM, conducting authentication, handling requests, and security considerations.

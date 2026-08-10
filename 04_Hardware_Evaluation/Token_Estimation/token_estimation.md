@@ -2,6 +2,7 @@
 This initial LLM system deployment is designed for a mid-sized user base. Not every single user will interact with the LLM, so realistic active usage will only be a portion of the total user population. Most users will be using the LLM primarily for simple conversational tasks, which will not put an immense amount of strain on the GPUs. What must be planned for in an environment is peak concurrent usage. 
 This occurs during high-demand scenarios such as classroom environments, competitions, events, or busy work hours, where many users may be submitting requests to the LLM at the same time and using longer or more complex prompts, which places a higher load on GPU resources. Because of this, the system is designed to be able to handle peak concurrency while also operating smoothly during daily usage, ensuring stable performance even under heavy load. 
 This is achieved through a variety of methods, including queueing mechanisms, Service Level Objective (SLO) planning, and optimal hardware selection.
+
 The table below shows the estimates that hardware requirements will be based on. It takes into account normal daily usage, expected user interaction levels, and peak demand scenarios such as business usage or events. These estimates are based on scalable assumptions and are meant to act as a baseline model. The system is designed to adapt to increased usage over time, including growth in user adoption and higher demand in the environment it is deployed in.
 
 GPU: NVIDIA L40

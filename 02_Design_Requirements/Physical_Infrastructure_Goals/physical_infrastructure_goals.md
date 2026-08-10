@@ -1,0 +1,2 @@
+2.2.b. Physical Infrastructure Goals
+The goals of this section take into account how the physical infrastructure of the LLM will be designed. The physical infrastructure is designed with redundancy to eliminate as many single-points of failure as possible, as well as enabling easier troubleshooting. Future scalability, efficient power usage, and minimizing usage of rack space is taken into account as well in the design.

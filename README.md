@@ -7,7 +7,7 @@ This project was designed to enable organizations to run AI workloads while main
 
 This system supports **LLM inference, model training, APIs, databases, resource monitoring, and automated workflows**. 
 
-GPU compute, dedicated service servers, and gateway systems are isolated using **VLANs and network segmentation**, while **filtering, rate limiting, encryption, validation, logging, authentication, and continuous patching** protect the environment and control communication between systems.
+GPU compute, dedicated service servers, and gateway systems are isolated using **VLANs and network segmentation**, while **filtering, rate limiting, encryption, validation, logging, authentication, and continuous patching** are enforced to protect the environment and control the flow of data.
 
 The design also considers the physical requirements of operating the system, including rack space, switching, cabling, power consumption, UPS protection, hardware requirements, and future expansion. Backup and recovery planning is included to maintain high-availability and protect important system data.
 

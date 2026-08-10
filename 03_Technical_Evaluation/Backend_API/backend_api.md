@@ -1,0 +1,2 @@
+3.5.) Backend API Framework: vLLM (Open Source) (Free)
+Explanation: vLLM is an open-source, high-performance inference engine for large language models. It was designed to run models like Mistral 7B and maximize GPU usage while handling many concurrent requests. vLLM uses techniques like continuous batching and memory optimization to process multiple prompts simultaneously, increasing tokens per second and reducing latency. Its design maximizes throughput and minimizes latency. 

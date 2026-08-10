@@ -1,0 +1,1 @@
+Explanation: This diagram is an example layout showing how the software components should be grouped across the rack. It illustrates which services belong together and how they can be organized, regardless of the specific server order used in deployment. 

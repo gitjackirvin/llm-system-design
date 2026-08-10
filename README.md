@@ -1,68 +1,18 @@
 # Large Language Model System Network Design
 
-> **A complete network, infrastructure, security, and deployment design for an internal Large Language Model (LLM) system.**
+🖥️ Project Overview
 
-This repository contains a complete, structured, and GitHub-optimized version of the **LLM System Network Design Report** authored by **Jack Irvin**.
+The Large Language Model System Network Design is a complete infrastructure design for deploying and operating an internal Large Language Model environment. The system is designed around security, performance, reliability, scalability, and controlled access, allowing an organization to run AI workloads while maintaining control over its data and infrastructure.
 
-The original document has been reorganized into modular Markdown files covering system requirements, technical evaluation, hardware, physical infrastructure, networking, security, scalability, backups, diagrams, cost analysis, and use cases.
+The system is capable of supporting LLM inference, model training, API services, databases, caching, monitoring, logging, authentication, network segmentation, automated workflows, and backup operations. These services are separated across dedicated infrastructure and network segments to reduce unnecessary exposure and provide greater control over how systems communicate with one another.
 
----
+The architecture incorporates GPU compute resources for running and training models, dedicated servers for supporting services such as databases and observability, and gateway infrastructure for controlling access to the LLM services. Network segmentation and VLANs are used to isolate critical systems, while security controls such as filtering, rate limiting, encryption, validation, logging, and continuous patching help protect the environment.
 
-## 👤 About Me
+The design also considers the physical requirements of operating the system, including rack space, switching, cabling, power consumption, UPS protection, hardware requirements, and future expansion. Backup and recovery planning is included to maintain availability and protect important system data.
 
-**Jack Irvin**
+The result is an infrastructure architecture designed to provide an internal AI platform that can support a variety of workloads while remaining secure, observable, maintainable, and scalable.
 
-I am a **[your role/title]** with an interest in **[your areas of interest]**.
-
-I designed this project to explore the process of planning and building a complete internal LLM infrastructure environment, with an emphasis on **networking, security, infrastructure, scalability, performance, and reliability**.
-
-### What I Do
-
-* **Role:** [Your role]
-* **Interests:** [Networking / Cybersecurity / AI / Infrastructure / Systems Administration / etc.]
-* **Education:** [Your school, program, certifications, or education]
-* **Location:** [Optional]
-* **GitHub:** [Add your GitHub profile]
-* **LinkedIn:** [Add your LinkedIn profile]
-
-### About This Project
-
-This project demonstrates my ability to take a complex technical requirement and break it down into a complete infrastructure design.
-
-The project covers everything from **hardware selection and rack design to network segmentation, security controls, LLM deployment, monitoring, backups, scalability, and cost analysis**.
-
----
-
-## 🖥️ System Design
-
-Below is the overall design of the LLM infrastructure.
-
-<!-- Replace the path below with the location of your main overview image -->
-
-![LLM System Network Design](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)
-
----
-
-## 📘 Purpose
-
-This repository provides a full technical breakdown of designing, deploying, and maintaining an internal Large Language Model (LLM) system.
-
-The project covers:
-
-* System capabilities
-* Security and infrastructure goals
-* Technical stack evaluation
-* Hardware architecture
-* Physical infrastructure planning
-* Network segmentation
-* Backup and recovery strategies
-* Scalability planning
-* Monitoring and observability
-* Cost analysis
-* Diagrams and architecture
-* Real-world usage scenarios
-
-All content is derived from the original LLM System Network Design Report.
+![LLM System Network Design](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
 
 ---
 

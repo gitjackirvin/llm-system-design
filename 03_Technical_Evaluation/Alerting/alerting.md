@@ -1,0 +1,2 @@
+3.12.) Alerting: Alertmanager (Open Source) (Free)
+Explanation: Alertmanager is the alert‑processing and notification component of the Prometheus monitoring ecosystem. After an alert is triggered Alertmanager uses a set of rules to determine where it will be sent. Alertmanager removes duplicate alerts, groups similar alerts together, applies routing rules to them and sends them to a service for a person to see. It automatically can notify if services become unreachable, if a bottleneck is happening, and if there is a spike or drop in utilization of certain resources.

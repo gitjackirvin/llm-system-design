@@ -1,45 +1,11 @@
-Explanation: This section outlines an example server architecture for what software would be  running on each node of the server that metrics are being collected on. It also includes a secrets management instance within the system.
+  
+Explanation: This table outlines an example server architecture for what software would be running on each node of the server that the database systems are on.
 
-Node
-CPU
-RAM
-Storage
-NIC
-OS
-Role
-Primary Observation Node
-2× Intel Xeon E5‑2680 v4 (28 cores)
-64GB DDR4 Registered
-480GB SATA SSD
-1GbE onboard
-Ubuntu 24.04
-Dashboards/Metrics/Logs
-Replica Observation Node
-2× Intel Xeon E5‑2680 v4 (28 cores)
-64GB DDR4 Registered
-480GB SATA SSD
-1GbE onboard
-Ubuntu 24.04
-Dashboards/Metrics/Logs
-Spare Node
-2× Intel Xeon E5‑2680 v4 (28 cores)
-64GB DDR4 Registered
-480GB SATA SSD
-1GbE onboard
-Ubuntu 24.04
-Spare Node
-Secrets Management Node
-2× Intel Xeon E5‑2680 v4 (28 cores)
-64GB DDR4 Registered
-960GB SATA SSD
-1GbE onboard
-Ubuntu 24.04
-Secrets Management/Credential Storage
-Chassis
-4× 1280W 80Plus Platinum PSUs
-N/A
-12‑bay NVMe/SATA
-N/A
-N/A
-4‑node chassis + rails
+| Node | CPU | RAM | Storage/Nvme | NIC | OS | Role |
+| :---: | ----- | ----- | ----- | ----- | ----- | ----- |
+| Primary Storage Node | 2× E5‑2699 v4 (44 cores) | 2x32GB DDR4 | 1TB NVMe | 1GbE | Ubuntu 24.04 | Auth and Session |
+| Primary Storage Node | 2× E5‑2699 v4 (44 cores) | 2x32GB DDR4 | 1TB NVMe | 1GbE | Ubuntu 24.04 | Sanitized Prompts |
+| Replica Storage Node | 2× E5‑2699 v4 (44 cores) | 2x32GB DDR4 | 1TB NVMe | 1GbE | Ubuntu 24.04 | Auth and Session |
+| Replica Storage Node | 2× E5‑2699 v4 (44 cores) | 2x32GB DDR4 | 1TB NVMe | 1GbE | Ubuntu 24.04 | Sanitized Prompts |
+| Chassis | 4× 1280W Platinum PSUs | N/A | 12‑Bay NVMe | N/A | N/A | Physical Rails |
 

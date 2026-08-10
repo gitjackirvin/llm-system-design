@@ -1,0 +1,119 @@
+configure terminal
+
+hostname NEXUS-CORE
+
+feature interface-vlan
+feature ssh
+feature lacp
+
+!
+! VLANs
+!
+
+vlan 10
+  name MANAGEMENT
+
+vlan 20
+  name GPU
+
+vlan 30
+  name REQUEST
+
+vlan 40
+  name DATABASE
+
+vlan 50
+  name OBSERVATION
+
+vlan 60
+  name PUBLIC
+
+!
+! Layer 3 gateways
+!
+
+interface vlan10
+ description MANAGEMENT-SVI
+ ip address 10.10.10.1/24
+ no shutdown
+
+interface vlan20
+ description GPU-SVI
+ ip address 10.10.20.1/24
+ no shutdown
+
+interface vlan30
+ description REQUEST-SVI
+ ip address 10.10.30.1/24
+ no shutdown
+
+interface vlan40
+ description DATABASE-SVI
+ ip address 10.10.40.1/24
+ no shutdown
+
+interface vlan50
+ description OBSERVATION-SVI
+ ip address 10.10.50.1/24
+ no shutdown
+
+interface vlan60
+ description PUBLIC-SVI
+ ip address 10.10.60.1/24
+ no shutdown
+
+!
+! Enable routing
+!
+
+ip routing
+
+!
+! GPU node interfaces
+!
+
+interface ethernet1/1
+ description GPU-NODE-1
+ switchport
+ switchport mode trunk
+ spanning-tree port type edge trunk
+ no shutdown
+
+interface ethernet1/2
+ description GPU-NODE-2
+ switchport
+ switchport mode trunk
+ spanning-tree port type edge trunk
+ no shutdown
+
+interface ethernet1/3
+ description GPU-NODE-3
+ switchport
+ switchport mode trunk
+ spanning-tree port type edge trunk
+ no shutdown
+
+!
+! Catalyst uplink
+!
+
+interface ethernet1/32
+ description ACCESS-SWITCH-UPLINK
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40,50,60
+ no shutdown
+
+!
+! Management interface
+!
+
+interface mgmt0
+ ip address 10.10.10.250/24
+
+vrf context management
+ ip route 0.0.0.0/0 10.10.10.1
+
+username admin password SuperSecurePassword1 role network-admin
+
+copy running-config startup-config

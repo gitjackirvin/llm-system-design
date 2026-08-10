@@ -1,3 +1,4 @@
+  
 **5.2.) Cabling Requirements**
 
 Explanation: This section outlines the network throughput requirements of the system based on workload demands and communication between components. It is used to determine the appropriate cabling types and infrastructure needed to maintain performance and reliability. The design takes into account expected system load, thermal considerations under heavy usage, and future scalability to ensure the network can support increased demand over time.
@@ -18,4 +19,15 @@ Explanation: This section provides an overview of the network interface requirem
 | Server Rack Size | 42U | Full‑height rack |
 | Current Space Occupied | 16U | Servers \+ switches \+ UPS |
 | Leftover Space | 26U (≈13 chassis) | The leftover space will be used for expansions. |
+
+**5.2.b.) Cabling Overview \+ Cabling Cost**  
+Explanation: This section details all of the necessary cables and receives for proper cabling as well as the costs for cables.
+
+| Cable Type | Quantity Needed | Estimated Cost Range | Purpose | Port Type |
+| :---: | ----- | ----- | ----- | ----- |
+| Cat6a RJ45 | 8 cables | On hand | Connects Observation, Request Handling, and Database Nodes | 1GbE RJ45 |
+| QSFP28 DAC | 4 cables | $40–$120 each | Connects GPU Nodes to 100GbE switch | 100GbE QSFP28 |
+| Rack Power Cables | Included with chassis | Included with servers | Power delivery for server chassis | N/A |
+| SFP+/SFP28 Uplink Cable | 1–2 cables | $20–$80 each | Uplink from RJ45 access switch to core switch | SFP+/SFP28 |
+| Cable Management Accessories | As needed | $20–$50 | Velcro straps and cable guides | N/A |
 

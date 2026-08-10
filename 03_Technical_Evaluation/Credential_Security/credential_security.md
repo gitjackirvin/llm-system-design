@@ -1,0 +1,2 @@
+3.13.) Credential Security: HashiCorp Vault (Open Source) (Free)
+Explanation: HashiCorp Vault is used as a centralized secrets management system to securely store and control access to sensitive information such as credentials, keys, and certificates. It enforces strict access control policies and ensures secure handling of sensitive data across the system. Secrets are periodically rotated to maintain security, and applications are granted access only to the credentials required for their operation. All communication with the vault is encrypted to protect data in transit.

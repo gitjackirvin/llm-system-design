@@ -2,6 +2,7 @@
 
 This repository contains a complete, structured, and GitHub-optimized version of the **LLM System Network Design Report** authored by **Jack Irvin**.
 The original document has been reorganized into modular Markdown files for readability, maintainability, and version control. Below is an image of the design for explanation.
+[![Rack Diagram](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
 
 ## 📘 Purpose
 
@@ -19,8 +20,6 @@ This repository provides a full technical breakdown of designing, deploying, and
 All content is derived from the provided document.
 
 ## 📁 Repository Navigation
-
-[![Rack Diagram](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
 
 ### 1. Introduction
 

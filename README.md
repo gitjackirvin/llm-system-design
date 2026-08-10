@@ -126,12 +126,12 @@ Logging, filtering, rate limiting, validation, subnetting, patching, and encrypt
 
 Logical, hardware, and conceptual diagrams.
 
-* [Hardware Diagram](11_Diagrams/Hardware_Diagram/hardware_diagram.md)
-* [Physical Diagram](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)
-* [Logical Diagram](11_Diagrams/Logical_Diagram/logical_diagram.md)
-* [Rack Diagram — Page 3](11_Diagrams/Logical_Diagram/Rack%20Diagram-Page-3.drawio.png)
-* [Rack Diagram](11_Diagrams/Rack_Diagram/rack_diagram.md)
-* [Rack Diagram Drawing](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
+* [Hardware Diagram Explained](11_Diagrams/Hardware_Diagram/hardware_diagram.md)
+* [Hardware Diagram](11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png)
+* [Logical Diagram Explained](11_Diagrams/Logical_Diagram/logical_diagram.md)
+* [Logical Diagram](11_Diagrams/Logical_Diagram/Rack%20Diagram-Page-3.drawio.png)
+* [Rack Diagram Explained](11_Diagrams/Rack_Diagram/rack_diagram.md)
+* [Rack Diagram](11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png)
 
 ### 12. Cost Analysis
 

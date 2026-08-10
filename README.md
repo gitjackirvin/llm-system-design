@@ -2,68 +2,72 @@
 
 This repository contains a complete, structured, and GitHub-optimized version of the **LLM System Network Design Report** authored by **Jack Irvin**.
 
-The original document has been reorganized into modular Markdown files for improved readability, maintainability, collaboration, and version control.
+The original document has been reorganized into modular Markdown files for readability, maintainability, collaboration, and version control.
 
 ---
 
-## 📘 Purpose
+# 📘 Purpose
 
 This repository provides a comprehensive technical blueprint for designing, deploying, securing, and maintaining an on-premises Large Language Model (LLM) infrastructure.
 
 Topics covered include:
 
-- Design requirements and system objectives
-- Technical architecture evaluation
-- Hardware analysis and sizing
-- Physical infrastructure planning
-- Network segmentation and security
-- Data access controls
-- Backup and disaster recovery
-- Scalability strategy
-- Cost analysis
-- Enterprise use cases
-- Physical, logical, and hardware diagrams
-
-All content is derived from the original LLM System Network Design Report.
+- System Requirements
+- Technical Architecture
+- Hardware Evaluation
+- Infrastructure Design
+- Security Controls
+- Backup & Recovery
+- Scalability Planning
+- Cost Analysis
+- Enterprise Use Cases
+- Network Diagrams
 
 ---
 
 # 📁 Repository Navigation
 
-## 1. Introduction
+<details>
+<summary><strong>01. Introduction</strong></summary>
+
+<br>
 
 - 01_Introduction/introduction.md
 
----
+</details>
 
-## 2. Design Requirements
+<details>
+<summary><strong>02. Design Requirements</strong></summary>
+
+<br>
 
 ### Core Requirements
 
 - 02_Design_Requirements/Capabilities/capabilities.md
 - 02_Design_Requirements/Goals/goals.md
 
-### Infrastructure & Performance Requirements
+### Performance & Infrastructure
 
 - 02_Design_Requirements/Latency_SLO/latency_slo.md
-- 02_Design_Requirements/Scalability_Goals/scalability_goals.md
-- 02_Design_Requirements/Physical_Infrastructure_Goals/physical_infrastructure_goals.md
+- [2_Design_Requirements/Scalability_Goals/scalability_goals.md
+- [Physical Infrastructure Goals](02_Design_ture_Goals/physical_infrastructure_goals.md
 
-### Security & Recovery Requirements
+### Security & Recovery
 
 - 02_Design_Requirements/Security_Goals/security_goals.md
-- 02_Design_Requirements/Backup_Goals/backup_goals.md
-- 02_Design_Requirements/Subnetting_Goals/subnetting_goals.md
+- [Backup Goals](02ments/Backup_Goals/backup_goals.md
+- [Subnetting Goals](02_Design_Requirements/Subnetting_Goals/subnettings>
 
----
+<details>
+<summary><strong>03. Technical Evaluation</strong></summary>
 
-## 3. Technical Evaluation
+<br>
 
-### APIs & Application Layer
+### APIs
 
-- 03_Technical_Evaluation/Frontend_API/frontend_api.md
-- 03_Technical_Evaluation/Backend_API/backend_api.md
-- 03_Technical_Evaluation/Gateway_API/gateway_api.md
+- [Frontend API](03_Technical_Evaluationrontend_api.md
+- [Backend API](03_Tation/Backend_API/backend_api.md
+- [Gatewayical_Evaluation/Gateway_API/gateway_api.md
 
 ### AI Platform
 
@@ -71,160 +75,206 @@ All content is derived from the original LLM System Network Design Report.
 - 03_Technical_Evaluation/Model_Training/model_training.md
 - 03_Technical_Evaluation/Orchestration/orchestration.md
 
-### Data & Performance
+### Data Layer
 
-- 03_Technical_Evaluation/Database/database.md
-- 03_Technical_Evaluation/Caching/caching.md
+- [Database](03_Technical_Evaluationatabase.md
+- [Caching](03_Technical_Evaluation/Cachingd
 
-### Monitoring & Operations
+### Monitoring
 
-- 03_Technical_Evaluation/Metrics_Tool/metrics_tool.md
-- 03_Technical_Evaluation/Metrics_Dashboard/metrics_dashboard.md
-- 03_Technical_Evaluation/Log_Tracking/log_tracking.md
-- 03_Technical_Evaluation/Alerting/alerting.md
+- [Metrics Tool]valuation/Metrics_Tool/metrics_tool.md
+- [Metrics Dashboard](03_Technical_Evaluationetrics_dashboard.md
+- [Log TrackingEvaluation/Log_Tracking/log_tracking.md
+- [Alerting](03_Taluation/Alerting/alerting.md
 
 ### Security Components
 
-- 03_Technical_Evaluation/Credential_Security/credential_security.md
-- 03_Technical_Evaluation/Reverse_Proxy/reverse_proxy.md
+- [Credential Security](03_Techntial_Security/credential_security.md
+- [Reverse Proxy](03_Technical_se_Proxy/reverse_proxy.md
 
----
+</details>
 
-## 4. Hardware Evaluation
+<details>
+<summary><strong>04. Hardware Evaluation</strong></summary>
 
-### Compute & Infrastructure
+<br>
+
+### Hardware Specifications
 
 - 04_Hardware_Evaluation/Hardware_Specs/Hardware%20Specs.md
-- 04_Hardware_Evaluation/Software_to_Hardware_Mapping/Software%20to%20Hardware%20Mapping.md
-- 04_Hardware_Evaluation/Token_Estimation/Hardware%20Token%20Estimation.md
+- [Software to Hardware Mapping](04_Hardware__Mapping/Software%20to%20Hardware%20Mapping.md
+- [Hardware Token Estimation](04_Hardware/Hardware%20Token%20Estimation.md
 
 ### Server Roles
 
-- 04_Hardware_Evaluation/Gateway_Servers/gateway_servers.md
-- 04_Hardware_Evaluation/Maria_DB/mariadb_.md
-- 04_Hardware_Evaluation/Observability_Servers/observability_servers.md
-- 04_Hardware_Evaluation/vLLM_Axolotl_Server/Vllm_axolotl_server.md
+- [Gateway Servers](04_Hardware_Evaluation/Gateway_rvers.md
+- [MariaDB](04_Hardware_Evaluation/Mriadb_.md
+- [Observability Servers/Observability_Servers/observability_servers.md
+- [vLLM Axolotl Server]n/vLLM_Axolotl_Server/Vllm_axolotl_server.md
 
-### Infrastructure Planning
+### Infrastructure
 
-- 04_Hardware_Evaluation/Latency_SLO/latency_slo.md
-- 04_Hardware_Evaluation/Power_Usage/power_usage.md
-- 04_Hardware_Evaluation/UPS_Selection/ups_selection.md
+- [Latency SLO](04_Hardware_Evaluationatency_slo.md
+- [Power Usage](04_Hardware_Evaluation/Power_age.md
+- [UPS Selection](04_HardwareSelection/ups_selection.md
 
 ### Cost Analysis
 
-- 04_Hardware_Evaluation/Hardware_Costs/hardware_costs.md
+- [Hardware Costs](04_Hardware_re_Costs/hardware_costs.md
 
----
+</details>
 
-## 5. Physical Infrastructure
+<details>
+<summary><strong>05. Physical Infrastructure</strong></summary>
 
-- 05_Physical_Infrastructure/Rack_Requirements/rack_requirements.md
-- 05_Physical_Infrastructure/Switching_Requirements/switching_requirements.md
-- 05_Physical_Infrastructure/Cabling_Requirements/cabling_requirements.md
+<br>
+
+- [Rack Requirements](05_Physical_Requirements/rack_requirements.md
+- [Switching Requirements](05_Physical_Requirements/switching_requirements.md
+- [Cabling Requirements](05_Physical_Requirements/cabling_requirements.md
 - 05_Physical_Infrastructure/Subnetting_Requirements/subnetting_requirements.md
-- 05_Physical_Infrastructure/Total_Physical_Cost/total_physical_cost.md
+- [Total Physical Cost](05_Physical_Infrastructure/tal_physical_cost.md
 
----
+</details>
 
-## 6. Data Access
+<details>
+<summary><strong>06. Data Access</strong></summary>
+
+<br>
 
 - 06_Data_Access/Proxmox_Access/proxmox_access.md
-- 06_Data_Access/Software_Access/software_access.md
-- 06_Data_Access/Security_Considerations/security_considerations.md
+- [Software Access](06_re_Access/software_access.md
+- [Security Considerations](06iderations/security_considerations.md
 
----
+</details>
 
-## 7. Network Segmentation
+<details>
+<summary><strong>07. Subnetting</strong></summary>
+
+<br>
 
 - 07_Subnetting/Data_Segmentation/data_segmentation.md
 - 07_Subnetting/VLANs/vlans.md
 
----
+</details>
 
-## 8. Scalability
+<details>
+<summary><strong>08. Scalability</strong></summary>
+
+<br>
 
 - 08_Scalability/Server_Scalability/server_scalability.md
 - 08_Scalability/Database_Scalability/database_scalability.md
 - 08_Scalability/Physical_Scalability/physical_scalability.md
 
----
+</details>
 
-## 9. Backups & Disaster Recovery
+<details>
+<summary><strong>09. Backup & Recovery</strong></summary>
 
-- Backup Locations
+<br>
+
+- 09_Backups/Backup_Locations/backup_locations.md
 - 09_Backups/Backup_Schedule/backup_schedule.md
-- 09_Backups/Backup_Retention/backup_retention.md
+- [Backup Retention](09_Backups/Backupetention.md
 
----
+</details>
 
-## 10. Security
+<details>
+<summary><strong>10. Security</strong></summary>
 
-- 10_Security/Continuous_Patching/continuous_patching.md
+<br>
+
+- Continuous Patching
 - 10_Security/Encryption_in_Transit/encryption_in_transit.md
-- 10_Security/Filtering/filtering.md
+- [Filteringy/Filtering/filtering.md
 - 10_Security/Logging/logging.md
 - 10_Security/Rate_Limiting/rate_limiting.md
 - 10_Security/Separate_Subnetting/separate_subnetting.md
-- 10_Security/Validation_Sanitizing/validation_sanitizing.md
+- [Validation & Sanitizing](10_Security/Validationitizing.md
 
----
+</details>
 
-## 11. Diagrams
+<details>
+<summary><strong>11. Diagrams</strong></summary>
+
+<br>
 
 ### Hardware Diagram
 
-- 11_Diagrams/Hardware_Diagram/hardware_diagram.md
-- 11_Diagrams/Hardware_Diagram/Physical%20Diagram.drawio.png
+- [Documentation](11_Diagrams/Hardware_Diagram/hardwarehysical Diagram](11_Diagrams/Hardware0Diagram.drawio.png
 
 ### Logical Diagram
 
-- 11_Diagrams/Logical_Diagram/logical_diagram.md
-- 11_Diagrams/Logical_Diagram/Rack%20Diagram-Page-3.drawio.png
+- [Documentation](11_Diagrams/Logical_Diagram.md
+- [Diagram](11_Diagrams/Logical_Diagram/Rack%20Diagram-Pagepng
 
 ### Rack Diagram
 
-- 11_Diagrams/Rack_Diagram/rack_diagram.md
-- 11_Diagrams/Rack_Diagram/Rack%20Diagram.drawio.png
+- [Documentationck_Diagram/rack_diagram.md
+- [Diagramams/Rack_Diagram/Rack%20Diagram.drawio.png
 
----
+</details>
 
-## 12. Cost Analysis
+<details>
+<summary><strong>12. Cost Analysis</strong></summary>
+
+<br>
 
 - 12_Cost_Analysis/Hardware_Cost/hardware_cost.md
-- 12_Cost_Analysis/Physical_Cost/physical_cost.md
-- 12_Cost_Analysis/Total_Cost/total_cost.md
+- [Physical Cost](12_Cost_Analysis/Physical_Cost/physicall Cost](12_Cost_Analysis/Totalost.md
+
+</details>
+
+<details>
+<summary><strong>13. Enterprise Use Cases</strong></summary>
+
+<br>
+
+- [Academic & Research](13_Uses/Academic%20%26ssibility](13_Uses/Accessibility.md Workflow](13_Uses/Automation%20%l Automation](13_Uses/md
+- [File Conversion & Data ProcessingData%20Processing.md
+- [Knowledge Management](13_Uses/Knowledge%20gs & Scheduling](13_Uses/Meetmd
+- [Networking & Infrastructure](13_Uses/Networking%20%26%20Infrastructure13_Uses/Security%20%26ils>
+
+<details>
+<summary><strong>14. Network Configuration Scripts</strong></summary>
+
+<br>
+
+- [Access Switch Configuration](14_Scripts/pts/acl_rules
+- [Coreripts/core_switch_config
+
+</details>
 
 ---
 
-## 13. Enterprise Use Cases
+# 📊 Repository Statistics
 
-- Academic & Research
-- 13_Uses/Accessibility.md
-- 13_Uses/Automation%20%26%20Workflow.md
-- 13_Uses/Email%20Automation.md
-- 13_Uses/File%20Conversion%20%26%20Data%20Processing.md
-- 13_Uses/Knowledge%20Management.md
-- 13_Uses/Meetings%20%26%20Scheduling.md
-- 13_Uses/Networking%20%26%20Infrastructure.md
-- 13_Uses/Security%20%26%20Compliance.md
-
----
-
-## 14. Network Configuration Scripts
-
-- 14_Scripts/access_switch_config
-- 14_Scripts/acl_rules
-- 14_Scripts/core_switch_config
-
----
-
-## 📜 License
-
-This repository contains content authored by Jack Irvin and is intended for educational, research, and internal infrastructure planning purposes.
+| Section | Contents |
+|----------|-----------|
+| Introduction | 1 Document |
+| Design Requirements | 8 Documents |
+| Technical Evaluation | 14 Documents |
+| Hardware Evaluation | 11 Documents |
+| Physical Infrastructure | 5 Documents |
+| Data Access | 3 Documents |
+| Subnetting | 2 Documents |
+| Scalability | 3 Documents |
+| Backups | 3 Documents |
+| Security | 7 Documents |
+| Diagrams | 6 Assets |
+| Cost Analysis | 3 Documents |
+| Use Cases | 9 Documents |
+| Scripts | 3 Configuration Files |
 
 ---
 
-## 📬 Contact
+# 📜 License
 
-For questions, corrections, or improvements, please submit an issue or contact the repository maintainer.
+This repository contains content authored by **Jack Irvin** and is intended for educational, research, architecture planning, and internal infrastructure design purposes.
+
+---
+
+# 📬 Contact
+
+For questions, corrections, or improvement suggestions, please open an issue or contact the repository maintainer.

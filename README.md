@@ -1,6 +1,6 @@
 # Large Language Model System Network Design
 
-**About Me: Hello, my name is Jack I am a third-year student studying Cybersecurity and am a aspiring network engineer! I created this project because I am passionate about learning new technologies and wanted to create a lower cost way for medium sized enterprises to host their own LLM models and control their data.**
+**About Me: Hello, my name is Jack I am a third-year student studying Cybersecurity and looking to work at a big company. I created this project because I am passionate about learning new technologies and wanted to create a lower cost way for medium sized enterprises to host their own LLM models and control their data.**
 
 The Large Language Model System Network Design is a complete infrastructure design for deploying and operating an internal Large Language Model environment. The system is designed around security, performance, reliability, scalability, and controlled access, allowing an organization to run AI workloads while maintaining control over its data and infrastructure.
 This project was designed to enable organizations to run AI workloads while maintaining control over their data and infrastructure. It was designed with security, performance, scalability, high-availability, and controlled access in mind.
